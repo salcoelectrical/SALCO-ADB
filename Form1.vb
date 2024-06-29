@@ -161,7 +161,6 @@ Public Class Form1
             MsgBox(ex.Message, MsgBoxStyle.ApplicationModal)
         End Try
     End Sub
-
     Dim objApp As Excel.Application
     Dim objBook As Excel._Workbook
     Dim oXL As Excel.Application
@@ -482,6 +481,7 @@ Public Class Form1
         Dim l_item As Integer
         Dim tax_total As Double, sub_total, grand_total
         'Dim cn As new OleDb.OleDbConnection(VExcel.Application")
+        oXL = CreateObject("Excel.Application")
         oXL.Visible = True
         ' Get a new workbook.
         oWB = oXL.Workbooks.Add

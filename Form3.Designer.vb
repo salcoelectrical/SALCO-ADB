@@ -43,6 +43,7 @@ Partial Class Form3
         Me.Save_dup_quote_BT = New System.Windows.Forms.Button()
         Me.D_Q_Name = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
+        Me.D_Q_Exit_BTN = New System.Windows.Forms.Button()
         CType(Me.D_Q_DG, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -102,7 +103,7 @@ Partial Class Form3
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(37, 101)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(72, 16)
+        Me.Label2.Size = New System.Drawing.Size(76, 17)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "First Name"
         '
@@ -111,7 +112,7 @@ Partial Class Form3
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(615, 174)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 16)
+        Me.Label3.Size = New System.Drawing.Size(98, 17)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Quote Creator"
         '
@@ -120,7 +121,7 @@ Partial Class Form3
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(352, 174)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(99, 16)
+        Me.Label4.Size = New System.Drawing.Size(103, 17)
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "E-Mail Address"
         '
@@ -129,7 +130,7 @@ Partial Class Form3
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(37, 174)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(82, 16)
+        Me.Label5.Size = New System.Drawing.Size(86, 17)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Full Address"
         '
@@ -138,7 +139,7 @@ Partial Class Form3
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(615, 101)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(97, 16)
+        Me.Label6.Size = New System.Drawing.Size(103, 17)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "Phone Number"
         '
@@ -147,7 +148,7 @@ Partial Class Form3
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(347, 101)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(72, 16)
+        Me.Label7.Size = New System.Drawing.Size(76, 17)
         Me.Label7.TabIndex = 12
         Me.Label7.Text = "Last Name"
         '
@@ -156,7 +157,7 @@ Partial Class Form3
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(1013, 145)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(94, 16)
+        Me.Label8.Size = New System.Drawing.Size(101, 17)
         Me.Label8.TabIndex = 13
         Me.Label8.Text = "Quote Number"
         '
@@ -165,7 +166,7 @@ Partial Class Form3
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(1013, 101)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(75, 16)
+        Me.Label9.Size = New System.Drawing.Size(81, 17)
         Me.Label9.TabIndex = 14
         Me.Label9.Text = "Quote Date"
         '
@@ -196,7 +197,7 @@ Partial Class Form3
         '
         'Save_dup_quote_BT
         '
-        Me.Save_dup_quote_BT.Location = New System.Drawing.Point(1186, 35)
+        Me.Save_dup_quote_BT.Location = New System.Drawing.Point(1016, 35)
         Me.Save_dup_quote_BT.Name = "Save_dup_quote_BT"
         Me.Save_dup_quote_BT.Size = New System.Drawing.Size(152, 42)
         Me.Save_dup_quote_BT.TabIndex = 18
@@ -215,15 +216,25 @@ Partial Class Form3
         Me.Label10.AutoSize = True
         Me.Label10.Location = New System.Drawing.Point(1013, 193)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(83, 16)
+        Me.Label10.Size = New System.Drawing.Size(88, 17)
         Me.Label10.TabIndex = 20
         Me.Label10.Text = "Quote Name"
+        '
+        'D_Q_Exit_BTN
+        '
+        Me.D_Q_Exit_BTN.Location = New System.Drawing.Point(1237, 35)
+        Me.D_Q_Exit_BTN.Name = "D_Q_Exit_BTN"
+        Me.D_Q_Exit_BTN.Size = New System.Drawing.Size(138, 42)
+        Me.D_Q_Exit_BTN.TabIndex = 21
+        Me.D_Q_Exit_BTN.Text = "&Exit"
+        Me.D_Q_Exit_BTN.UseVisualStyleBackColor = True
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1440, 674)
+        Me.Controls.Add(Me.D_Q_Exit_BTN)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.D_Q_Name)
         Me.Controls.Add(Me.Save_dup_quote_BT)
@@ -274,4 +285,5 @@ Partial Class Form3
     Friend WithEvents Save_dup_quote_BT As Button
     Friend WithEvents D_Q_Name As TextBox
     Friend WithEvents Label10 As Label
+    Friend WithEvents D_Q_Exit_BTN As Button
 End Class
